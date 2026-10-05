@@ -20,7 +20,7 @@ function remover(tipo,quantidade){
         alert(`Quantidade indisponível para ${tipo}`);
         return;
     }
-    quantidadeDisponivel = quantidadeDisponivel - quantidade;
+    quantidadeDisponivel -= quantidade;
     document.getElementById(listaId[posicao]).textContent = quantidadeDisponivel;
     alert('Compra realizda com sucesso!')
 }
